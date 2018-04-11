@@ -10,7 +10,7 @@ class ServerSystem{
 		String cSender="\033[32m";
 		System.out.print("\033[2J\033[1H");
 		ServerSocket ss=new ServerSocket(2001);
-		System.out.println(fColor+"\t\tCHAT APPLICATION"+cStop+"\nServer started...");
+		System.out.println(fColor+"\t\tCHAT APPLICATION"+cStop+"\nServer started("+InetAddress.getLocalHost()+")...");
 		System.out.println("---Enter ## at the last line of message to send");
 		System.out.println("---Enter $$ to stop the chat");
 		s=ss.accept();
